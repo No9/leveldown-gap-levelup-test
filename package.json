@@ -1,0 +1,39 @@
+{
+    "name"            : "leveldown-gap-levelup-test"
+  , "description"     : "A test suite for leveldown to levelup integration in the browser"
+  , "contributors"    : [
+        "Anton Whalley <antonwhalley@vodafone.ie> (https://github.com/no9)"
+    ]
+  , "keywords": [
+        "leveldb",
+        "phonegap",
+        "leveldown",
+        "levelup"
+    
+    ]
+  , "version"         : "0.0.1"
+  , "main"            : "index.js"
+  , "dependencies"    : {
+      "leveldown-gap": "git://github.com/No9/node-leveldown-gap.git#master"
+     ,"levelup": "git://github.com/No9/node-levelup.git#master"
+
+    } 
+  , "devDependencies" : {
+        
+        "tape": "0.3.3"
+    }
+  , "repository"      : {
+        "type"            : "git"
+      , "url"             : "https://github.com/no9/leveldown-gap-levelup-test.git"
+    }
+  ,"browser": {
+    "bindings": false
+  } 
+  ,"testling": { 
+        "files": ["tests/test.js"], 
+        "browsers": ["iexplore/10.0","iexplore/8.0","iexplore/9.0","chrome/23.0","chrome/24.0","chrome/25.0","firefox/17.0","firefox/18.0","firefox/19.0", "opera/11.5","opera/11.6","opera/12.0","safari/5.0.5","safari/5.1","firefox/nightly","opera/next","chrome/canary","iphone/6.0","ipad/6.0","safari/6.0"]
+      }
+
+  , "license"         : "MIT"
+  , "gypfile"         : false
+}
